@@ -1,25 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useEffect} from 'react';
+import Home from './views/home';
+import Cart from './views/viewCart';
 import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {useDispatch} from 'react-redux';
+import {getAllProduct} from './store/actionType';
 
-function App() {
+// const logger = store => {
+//   return next => {
+//     return action => {
+//       console.log('[Middleware] - Dispatching ',action);
+//       const result = next(action);
+//       console.log('[Middleware] - next State', store.getState());
+//       return result;
+//     }
+//   }
+// }
+
+const App = () => {
+
+  const dispatch = useDispatch();
+  
+  useEffect(() => {
+    dispatch(getAllProduct());
+  },[]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/home' exact component={Home} />
+          <Route path='/cart' exact component={Cart} />
+        </Switch>
+      </BrowserRouter>
   );
 }
 
