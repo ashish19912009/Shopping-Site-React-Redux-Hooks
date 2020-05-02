@@ -11,8 +11,10 @@ import Card from '@material-ui/core/Card';
 import Divider from '@material-ui/core/Divider';
 import CardContent from '@material-ui/core/CardContent';
 import {removeItemFromCart, IncrementQuantity, DecrementQuantity} from '../store/actionType';
-import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp';
 import {useHistory} from 'react-router-dom';
+import Styles from './cartBody.module.css';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -67,10 +69,10 @@ export default function CenteredGrid() {
       <Grid container spacing={1} style={{padding:'70px 30px'}}>
         <Grid container item xs={12} sm={8}>
         <Typography variant="h4" gutterBottom style={{fontWeight:'bold'}}>
-        <KeyboardBackspaceIcon onClick={goBackToHomeHandler}/> Cart Items
+        <ArrowBackIosSharpIcon className={Styles.back} onClick={goBackToHomeHandler}/> {cartItem.length > 0 ? 'Cart Items' : 'Go Back'}
       </Typography>
         {
-            cartItem.length> 0 && cartItem.map((el,i)=> {
+            cartItem.length> 0 ? cartItem.map((el,i)=> {
                 return (<Card key={el.name} variant="outlined" style={{width:'90%', marginBottom:'20px'}}>
                     <Grid container spacing={1}>
                     <Grid item xs={4}>
@@ -98,7 +100,7 @@ export default function CenteredGrid() {
                     </Grid>
                     </Card>
                 )
-            })
+            }) : <React.Fragment><img src={require('../img/emptyCart.png')} style={{marginTop:'50px'}}/></React.Fragment>
         }
         </Grid>
         <Grid container item xs={12} sm ={4}>
