@@ -9,6 +9,7 @@ export const LowToHigh = 'LTH';
 export const HighToLow = 'HTL';
 export const Discount = 'Discount';
 export const filter = 'Filter';
+export const SearchKeyword= 'SEARCH_KEYWORD';
 
 export const setAllProduct = (res) => {
     return{
@@ -64,5 +65,12 @@ export const DecrementQuantity = (iName) => {
     return {
         type: DECREMENT_QUANTITY,
         iPosition: iName
+    }
+}
+
+export const SearchKeywordHandler = (keyword) => {
+    return {
+        type: SearchKeyword,
+        keyword: keyword
     }
 }

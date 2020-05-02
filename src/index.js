@@ -8,10 +8,12 @@ import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import GetProductReducer from './store/getProductReducer';
 import addToCartReducer from './store/cartReducer';
+import searchReducer from './store/keywordReducer';
 
 const rootReducer = combineReducers({
   getProduct: GetProductReducer,
-  addToCart: addToCartReducer
+  addToCart: addToCartReducer,
+  searchKeyword: searchReducer
 });
 
 const store = createStore(rootReducer, applyMiddleware(/**logger, */thunk));

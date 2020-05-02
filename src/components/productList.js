@@ -21,15 +21,26 @@ const ProductList = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
 
-
-  
-  let temp = [];
-  [temp] = [useSelector(state => {
-    if(state.getProduct.productList.length > 0)
+  const [temp] = [useSelector(state => {
+    if(state.getProduct.productList.length > 0 && state.searchKeyword.keyword ==='')
     {
       const temp1 = [];
       state.getProduct.productList.forEach(element => {
           temp1.push({...element});
+      });
+      return [...temp1];
+    } else if(state.getProduct.productList.length > 0 && state.searchKeyword.keyword !=='')
+    {
+      const temp1 = [];
+      state.getProduct.productList.forEach(element => {
+          const tempName = element.name.toLowerCase();
+          const sKey = state.searchKeyword.keyword.toLowerCase();
+          console.log(tempName);
+          console.log(sKey);
+          const res = tempName.indexOf(sKey);
+          console.log(res);
+          if(res !== -1)
+            temp1.push({...element});
       });
       return [...temp1];
     }   
