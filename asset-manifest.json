@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Shopping-Site-React-Redux-Hooks/static/css/main.a34398e8.chunk.css",
-    "main.js": "/Shopping-Site-React-Redux-Hooks/static/js/main.4861b71a.chunk.js",
-    "main.js.map": "/Shopping-Site-React-Redux-Hooks/static/js/main.4861b71a.chunk.js.map",
+    "main.css": "/Shopping-Site-React-Redux-Hooks/static/css/main.48b45ff3.chunk.css",
+    "main.js": "/Shopping-Site-React-Redux-Hooks/static/js/main.a083ef16.chunk.js",
+    "main.js.map": "/Shopping-Site-React-Redux-Hooks/static/js/main.a083ef16.chunk.js.map",
     "runtime-main.js": "/Shopping-Site-React-Redux-Hooks/static/js/runtime-main.6d4f5d36.js",
     "runtime-main.js.map": "/Shopping-Site-React-Redux-Hooks/static/js/runtime-main.6d4f5d36.js.map",
-    "static/js/2.af66003f.chunk.js": "/Shopping-Site-React-Redux-Hooks/static/js/2.af66003f.chunk.js",
-    "static/js/2.af66003f.chunk.js.map": "/Shopping-Site-React-Redux-Hooks/static/js/2.af66003f.chunk.js.map",
+    "static/js/2.4a01c73d.chunk.js": "/Shopping-Site-React-Redux-Hooks/static/js/2.4a01c73d.chunk.js",
+    "static/js/2.4a01c73d.chunk.js.map": "/Shopping-Site-React-Redux-Hooks/static/js/2.4a01c73d.chunk.js.map",
     "index.html": "/Shopping-Site-React-Redux-Hooks/index.html",
-    "precache-manifest.8dd4f2e77e17e2d4dda5cd7e67d2ba07.js": "/Shopping-Site-React-Redux-Hooks/precache-manifest.8dd4f2e77e17e2d4dda5cd7e67d2ba07.js",
+    "precache-manifest.c32785b8afc1a9a1e2090c6fc9000fc9.js": "/Shopping-Site-React-Redux-Hooks/precache-manifest.c32785b8afc1a9a1e2090c6fc9000fc9.js",
     "service-worker.js": "/Shopping-Site-React-Redux-Hooks/service-worker.js",
-    "static/css/main.a34398e8.chunk.css.map": "/Shopping-Site-React-Redux-Hooks/static/css/main.a34398e8.chunk.css.map",
-    "static/js/2.af66003f.chunk.js.LICENSE.txt": "/Shopping-Site-React-Redux-Hooks/static/js/2.af66003f.chunk.js.LICENSE.txt"
+    "static/css/main.48b45ff3.chunk.css.map": "/Shopping-Site-React-Redux-Hooks/static/css/main.48b45ff3.chunk.css.map",
+    "static/js/2.4a01c73d.chunk.js.LICENSE.txt": "/Shopping-Site-React-Redux-Hooks/static/js/2.4a01c73d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6d4f5d36.js",
-    "static/js/2.af66003f.chunk.js",
-    "static/css/main.a34398e8.chunk.css",
-    "static/js/main.4861b71a.chunk.js"
+    "static/js/2.4a01c73d.chunk.js",
+    "static/css/main.48b45ff3.chunk.css",
+    "static/js/main.a083ef16.chunk.js"
   ]
 }
